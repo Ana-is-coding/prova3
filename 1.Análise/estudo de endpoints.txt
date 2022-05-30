@@ -89,7 +89,7 @@ response
 //////////////////////////////////////////////////////////////////////////////
 
 
-(6) /GET                    /filme/:nome
+(6) /GET                    /busca?:nome=xx
 
 response
 [
@@ -118,10 +118,8 @@ response
     "avaliacao" : 0.0,
     "lancamento": "2020-10-00",
     "disponivel" : true, 
-    "usuario" : 0
-
-
-
+    "usuario" : 0,
+    "imagem" : ""
 
 
     }
