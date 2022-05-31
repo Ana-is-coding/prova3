@@ -2,13 +2,13 @@
 
 (1) / POST   /usuario/login
 
-request 
+request body
 {
     "email" : " ",
     "login" : " "
 }
 
-response 
+response (200)
 {
     "id" : 0, 
     "email" : " ",
@@ -18,7 +18,7 @@ response
 
 (2) /POST    /filme
 
-request 
+request body
 {
     "nome" : "",
     "sinopse" : "",
@@ -29,7 +29,7 @@ request
     "usuario" : 0
 }
 
-response
+response (200)
 { 
     "id" : 1,
     "nome" : "",
@@ -43,7 +43,7 @@ response
 }
 /////////////////////////////////////////////////////////////////////
 
-(3) /PUT      /filme/alterar
+(3) /PUT      /filme/:id
  
 request
 {
@@ -107,6 +107,7 @@ response
 
     }
 ]
+////////////////////////////////////////////////////////////////////////////////////
 
 (7) /GET                    /filme/id
 
