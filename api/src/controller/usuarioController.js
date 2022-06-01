@@ -9,13 +9,13 @@ server.post('./usuario/login', async(req,resp) => {
           const resposta = await login(email, senha);   
           resp.send(resposta)
           if(resposta) {
-               throw new Error('Credenciais invalidas')
+               throw new Error('Credenciais inválidas')
           }
      } 
      catch (err) {
          resp.status(400).send({
-              erro : err.message
-         })
+              erro : 'Ocorreu um erro'
+         });
      }
 })
 export default server;
